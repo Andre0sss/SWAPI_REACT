@@ -1,0 +1,68 @@
+body{
+  background-color: #1b1b1b;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+h1 {
+    font-size: 36px;
+    color: #ffd700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+   text-align: center;
+}
+.CardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+}
+
+.infoContainer{
+    background-color: #3f3e3e;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #ffd700;
+    font-size: 20px;
+    margin: 10px;
+
+}
+.selectOption {
+  padding: 8px;
+  font-size: 14px;
+  border: 2px solid #ffd700;
+  border-radius: 5px;
+  background-color: #0f0e0e;
+  color: #ffd700;
+  appearance: none;
+  width: 50%;
+  cursor: pointer;
+  margin-left: 25%;
+}
+
+.selectOption:focus {
+  outline: none;
+  border-color: #5c9aea;
+}
+
+/* Cambiar el puntero del cursor al pasar por las opciones */
+.selectOption option {
+  cursor: pointer;
+  background-color: #000;
+  color: #ffd700;
+}
+
+/* Estilo para la opción seleccionada */
+.selectOption option:checked {
+  background-color: #ffd700;
+  color: #000;
+}
+
+.LoadingNotification{
+  font-size: 16px;
+  color: #ffd700;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  margin: 20px auto;
+  width: 80%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
